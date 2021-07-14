@@ -152,6 +152,7 @@ footer p {
 
 .banner__desktop {
   max-width: 100%;
+  width: 100%;
 }
 
 #banner__content {
@@ -171,7 +172,11 @@ footer p {
   justify-content: center;
 }
 
-@media screen and  (max-width: 1040px) {
+@media screen and  (max-width: 940px) {
+
+  #logo {
+    font-size: 0.8rem;
+  }
   #menu {
     display: block;
     position: absolute;

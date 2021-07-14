@@ -29,17 +29,43 @@
 				<li><a href="/">Produtos</a></li>
 				<li><a href="/">Portfólio</a></li>
 				<li><a href="/">Contato</a></li>
-				<li><img src="./Assets/cart.svg" alt=""></li>
-				<li><img src="./Assets/user.svg" alt=""></li>				
+				<li>
+					<a href="/">
+						<img src="./Assets/cart.svg" alt="Mini Cart">
+					</a>
+				</li>
+				<li>
+					<a href="/">
+						<img src="./Assets/user.svg" alt="">
+					</a>
+				</li>				
 			</ul>
 		</nav>
 	</header>
 
 	<section id="banner__content">
 		<ul data-slide="banners__principal">
-			<li><img class="banner__desktop" src="./Assets/banners/banner-home_maquinas-illy_desktop.jpg" alt="banner 1"></li>
-			<li><img class="banner__desktop" src="./Assets/banners/banner_moedor-cadence_desktop.jpg" alt="banner 3"></li>
-			<li><img class="banner__desktop" src="./Assets/banners/banner-home_parceria-bialetti_desktop.jpg" alt="banner 2"></li>
+			<li>
+				<picture>
+					<source class="banner__mobo" srcset="./Assets/banners/banner-home_maquinas-illy_mobile.jpg" media="(max-width: 939px)">
+					<source class="banner__mobo" srcset="./Assets/banners/banner-home_maquinas-illy_desktop.jpg" media="(min-width: 940px)">
+					<img class="banner__desktop" src="./Assets/banners/banner-home_maquinas-illy_desktop.jpg" alt="Banner Default">
+				 </picture>
+			</li>
+			<li>
+				<picture>
+					<source class="banner__mobo" srcset="./Assets/banners/banner_moedor-cadence_mobile.jpg" media="(max-width: 939px)">
+					<source class="banner__mobo" srcset="./Assets/banners/banner_moedor-cadence_desktop.jpg" media="(min-width: 940px)">
+					<img class="banner__desktop" src="./Assets/banners/banner-home_maquinas-illy_desktop.jpg" alt="MDN">
+				 </picture>
+			</li>
+			<li>
+				<picture>
+					<source class="banner__mobo" srcset="./Assets/banners/banner-home_parceria-bialetti_mobile.jpg" media="(max-width: 939px)">
+					<source class="banner__mobo" srcset="./Assets/banners/banner-home_parceria-bialetti_desktop.jpg" media="(min-width: 940px)">
+					<img class="banner__desktop" src="./Assets/banners/banner-home_maquinas-illy_desktop.jpg" alt="MDN">
+				 </picture>
+			</li>
 		</ul>
 	</section>
 

@@ -15,9 +15,9 @@ function onSubmit(e) {
   const data = {};
   const successMessage = 'Seu email foi cadastrado com sucesso ✅'
 
+  data.id = emailList.length;
   data.email = e.target[0].value;
   data.date = new Date();
-  data.id = emailList.length;
   
 
   emailList.push(data);
@@ -47,8 +47,8 @@ window.addEventListener('load', () => {
 new SimpleSlide({
   slide: 'banners__principal', 
   nav: true, 
-  auto: false,
-  time: 7000,
+  auto: true,
+  time: 5000,
   pauseOnHover: true,
 });
 

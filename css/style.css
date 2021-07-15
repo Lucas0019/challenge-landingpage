@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 body,
 ul {
   margin: 0px;
   padding: 0px;
 }
 
-a, h1 {
+h1, h2, a, p {
   color: black;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
@@ -50,7 +52,7 @@ a:hover {
 #menu a {
   display: block;
   padding: 0.2rem;
-  font-family: 'Fira Code';
+  font-family: 'Poppins', sans-serif;
 }
 
 #btn__mobile {
@@ -59,7 +61,7 @@ a:hover {
 
 .title__newsletter {
   font-size: 1rem;
-  font-family: 'Fira Code';
+  font-family: 'Poppins', sans-serif;
 }
 
 .search__content {
@@ -100,6 +102,12 @@ a:hover {
   background: #193640;
   color: #fff;
   border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.input__button:hover {
+  background: #405a63;
 }
 
 footer p {
@@ -172,10 +180,19 @@ footer p {
   justify-content: center;
 }
 
+.banner__blackfriday {
+  display: flex;
+  justify-content: center;
+  height: 20rem;
+  margin: 2rem;
+}
+
 @media screen and  (max-width: 940px) {
 
   #logo {
     font-size: 0.8rem;
+    align-items: center;
+    padding: 1rem;
   }
   #menu {
     display: block;
@@ -244,6 +261,10 @@ footer p {
     width: 100%
   }
 
+  .input__email {
+    margin-bottom: 1rem;
+  }
+
   .input__email, 
   .input__button {
     width: auto;
@@ -255,7 +276,8 @@ footer p {
   }
 
   #quote h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    padding: 1rem;
   }
 
   #quote p {
